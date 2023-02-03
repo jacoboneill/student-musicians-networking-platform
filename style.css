@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap");
+
+body {
+	margin: 1rem;
+	height: calc(100vh - 2rem);
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	color: hsl(0, 0%, 30%);
+	background: rgb(187, 188, 191);
+	background: linear-gradient(
+		0deg,
+		rgba(187, 188, 191, 1) 0%,
+		rgba(244, 246, 251, 1) 30%
+	);
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 100px 10fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	height: 100%;
+}
+/*------------------------------------------------------------------------------------*/
+header {
+	height: 50%;
+	padding: 0;
+	/* border: 1px solid red; */
+	grid-area: 1 / 1 / 2 / 6;
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+}
+
+header img {
+	height: 150%; /* placeholder */
+	filter: invert(0.3); /*placeholder */
+}
+
+header .icons {
+	/* border: 1px solid orange; */
+	height: 100%;
+	width: 10%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 200%;
+}
+
+header i {
+	color: hsl(0, 0%, 30%);
+	transition: scale 0.2s;
+}
+
+header i:hover {
+	cursor: pointer;
+	scale: 1.05;
+	transition: scale 0.2s;
+}
+/*------------------------------------------------------------------------------------*/
+.hero-info {
+	/* border: 1px solid green; */
+	grid-area: 2 / 1 / 2 / 4;
+	padding: 10%;
+}
+
+.hero-info h1 {
+	font-weight: 800;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	text-overflow: show;
+	width: 100vw;
+}
+
+.hero-info #role {
+	color: hsl(267, 100%, 58%);
+}
+
+.hero-info p {
+	line-height: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.hero-info .buttons {
+	/* border: 1px solid violet; */
+	display: flex;
+	justify-content: space-between;
+	padding: 0 3rem;
+}
+
+.hero-info button {
+	width: 15vw;
+	aspect-ratio: 3/1;
+	background-color: hsl(0, 0%, 30%);
+	border: hidden;
+	color: rgba(244, 246, 251, 1);
+	font-weight: 600;
+	font-size: 1.5vw;
+	border-radius: 5px;
+	box-shadow: 0 0.75rem 10px hsl(0, 0%, 20%);
+	text-shadow: none;
+	transition: text-shadow box-shadow transform 0.2s;
+}
+
+.hero-info button:hover {
+	cursor: pointer;
+	text-shadow: 0 0 0.5vw rgba(251, 251, 244, 0.3);
+	transition: 0.2s;
+}
+
+.hero-info button:active {
+	transform: translateY(0.125rem);
+	box-shadow: none;
+	transition: 0.1s;
+}
+/*------------------------------------------------------------------------------------*/
+.hero-image {
+	display: grid;
+	/* border: 1px solid blue; */
+	grid-area: 2 / 4 / 2 / 6;
+	overflow: hidden;
+	background-image: url(./assets/hero-img-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-image img {
+	height: 100%;
+	margin: 0 auto;
+	transform: translateX(100px); /* placeholder */
+}
