@@ -115,6 +115,14 @@ header i:hover {
 	box-shadow: none;
 	transition: 0.1s;
 }
+
+.hero-info-blob {
+	position: absolute;
+	bottom: -40vh;
+	left: -25vw;
+	width: 50vw;
+	z-index: -1;
+}
 /*------------------------------------------------------------------------------------*/
 .hero-image {
 	/* border: 1px solid blue; */
