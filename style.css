@@ -12,6 +12,7 @@ body {
 		rgba(187, 188, 191, 1) 0%,
 		rgba(244, 246, 251, 1) 30%
 	);
+	overflow: hidden;
 }
 
 .wrapper {
@@ -118,7 +119,7 @@ header i:hover {
 .hero-image {
 	/* border: 1px solid blue; */
 	grid-area: 2 / 4 / 2 / 6;
-	overflow: show;
+	overflow: hidden;
 	background-image: url(./assets/hero-img-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
