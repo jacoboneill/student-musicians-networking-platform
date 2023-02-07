@@ -115,10 +115,10 @@ header img {
 	background-image: url("./assets/blob-primary.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 58svh;
+	height: 75svh;
 	aspect-ratio: 1/1;
-	bottom: -150px;
-	left: -100px;
+	bottom: -200px;
+	left: -200px;
 	z-index: -1;
 }
 
