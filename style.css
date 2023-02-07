@@ -117,8 +117,8 @@ header img {
 	background-repeat: no-repeat;
 	height: 58svh;
 	aspect-ratio: 1/1;
-	bottom: -25svh;
-	left: -25svw;
+	bottom: -150px;
+	left: -100px;
 	z-index: -1;
 }
 
@@ -153,7 +153,7 @@ header img {
 	}
 }
 
-@media only screen and (min-width: 825px) {
+@media only screen and (min-width: 1100px) {
 	.hero-info {
 		width: 50svw;
 		align-items: flex-start;
@@ -178,12 +178,26 @@ header img {
 	}
 
 	.buttons a {
-		font-size: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.hero-info::before {
+		content: "";
+		position: absolute;
+		z-index: 0;
+		right: 15px;
+		bottom: 0;
+		width: 45svw;
+		height: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom;
+
+		background-image: url(./assets/blob-secondary.svg);
 	}
 
 	.hero-info::after {
 		content: "";
-		z-index: 1;
 		position: absolute;
 		z-index: 0;
 		right: 0;
