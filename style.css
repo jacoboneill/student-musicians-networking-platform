@@ -129,11 +129,11 @@ header img {
 
 	header {
 		height: 10svh;
-		width: 92.5svw;
+		width: 97.5svw;
 	}
 
 	.hero-info .hero-title {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		margin-bottom: 3rem;
 	}
 
@@ -153,6 +153,51 @@ header img {
 	}
 }
 
-@media only screen and (min-width: 768px) {
-	/* Desktop */
+@media only screen and (min-width: 825px) {
+	.hero-info {
+		width: 50svw;
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.hero-info .hero-title {
+		width: 100svw;
+		margin-bottom: 1rem;
+	}
+
+	.hero-title #call::after {
+		content: " ";
+	}
+
+	.hero-info p {
+		font-size: 1.25rem;
+	}
+
+	.hero-info .buttons {
+		width: 75%;
+	}
+
+	.buttons a {
+		font-size: 1rem;
+	}
+
+	.hero-info::after {
+		content: "";
+		z-index: 1;
+		position: absolute;
+		z-index: 0;
+		right: 0;
+		bottom: 0;
+		width: 45svw;
+		height: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom;
+
+		background-image: url(./assets/placeholder-image.png);
+	}
+
+	:not(.hero-info::after) {
+		z-index: 0;
+	}
 }
