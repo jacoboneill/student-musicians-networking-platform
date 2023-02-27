@@ -29,7 +29,7 @@ body {
 .wrapper {
 	display: flex;
 	flex-direction: column;
-
+	align-items: center;
 	height: 100svh;
 }
 
@@ -39,7 +39,9 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	height: 5svh;
+	width: 80svw;
 	margin: 1rem 1rem 10svh 1rem;
+	z-index: 1;
 }
 
 header img {
@@ -133,7 +135,7 @@ header img {
 
 	header {
 		height: 10svh;
-		width: 97.5svw;
+		width: 90svw;
 	}
 
 	header img {
@@ -173,6 +175,7 @@ header img {
 		align-items: flex-start;
 		text-align: left;
 		margin: 5rem;
+		align-self: flex-start;
 	}
 
 	.hero-info .hero-title {
@@ -235,9 +238,5 @@ header img {
 		background-position: bottom;
 
 		background-image: url(./assets/placeholder-image.png);
-	}
-
-	:not(.hero-info::after) {
-		z-index: 0;
 	}
 }
