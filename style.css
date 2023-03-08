@@ -23,7 +23,6 @@ body {
 	background: var(--bg-gradient);
 	color: var(--fg-1);
 	font-family: var(--ff);
-	overflow: hidden;
 }
 
 .wrapper {
