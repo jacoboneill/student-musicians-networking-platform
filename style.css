@@ -26,10 +26,12 @@ body {
 }
 
 .wrapper {
+	position: relative;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 100svh;
+	min-height: 100svh;
 }
 
 header {
